@@ -1,11 +1,15 @@
 import React from 'react';
+import './friend.css';
+import { Link } from 'react-router-dom';
 
 const Friend = ({friend}) => {
-    const {name, username} = friend;
+    const {name, email, phone,id} = friend;
     return (
-        <div>
+        <div className='friend'>
             <h3>Name: {name}</h3>
-            <h6>User Name: {username}</h6>
+            <p>Email: {email}</p>
+            <p>Phone: {phone}</p>
+            <Link to= {`/friend/${id}`}>Show Details</Link>
         </div>
     );
 };

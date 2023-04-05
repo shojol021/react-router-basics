@@ -3,7 +3,7 @@ import React from 'react';
 const First = () => {
     return (
         <div>
-            This is the default first page
+            <h1>This is the default first page</h1>
         </div>
     );
 };
